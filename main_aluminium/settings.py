@@ -26,7 +26,7 @@ SECRET_KEY = 'django-insecure-e!8whn2vh!pz3-h$@uj7j7^_n3&m5^$-qzf=@-v+!b@f=^0=z-
 # SECURITY WARNING: don't run with debug turned on in production!
 DEBUG = True
 
-ALLOWED_HOSTS = []
+ALLOWED_HOSTS = ['aluminium_finder.onrender.com']
 
 
 # Application definition
@@ -152,3 +152,6 @@ EMAIL_USE_TLS = True
 # https://docs.djangoproject.com/en/4.0/ref/settings/#default-auto-field
 
 DEFAULT_AUTO_FIELD = 'django.db.models.BigAutoField'
+
+
+STATIC_ROOT = BASE_DIR / "staticfiles"
