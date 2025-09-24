@@ -1,0 +1,126 @@
+<!--
+Author: W3layouts
+Author URL: http://w3layouts.com
+License: Creative Commons Attribution 3.0 Unported
+License URL: http://creativecommons.org/licenses/by/3.0/
+-->
+<!DOCTYPE HTML>
+{% load static %}
+<html>
+<head>
+<title>Agent</title>
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+<meta name="keywords" content="" />
+<script type="application/x-javascript">
+    addEventListener("load", function () { setTimeout(hideURLbar, 0); }, false);
+    function hideURLbar() { window.scrollTo(0, 1); }
+</script>
+<!-- fonts -->
+<link href="//fonts.googleapis.com/css?family=Gruppo" rel="stylesheet">
+<link href="//fonts.googleapis.com/css?family=Open+Sans:300,300i,400,400i,600,600i,700,700i,800,800i" rel="stylesheet">
+<!-- /fonts -->
+<!-- css -->
+<link href="{% static 'modules/css/bootstrap.min.css' %}" rel="stylesheet" type="text/css" media="all" />
+<link href="{% static 'modules/css/font-awesome.min.css' %}" rel="stylesheet" type="text/css" media="all" />
+<link href="{% static 'modules/css/aos.css' %}" rel='stylesheet prefetch' type="text/css" media="all" />
+<link href="{% static 'modules/css/style.css' %}" rel="stylesheet" type="text/css" media="all" />
+<!-- /css -->
+<!-- js files -->
+<script src="{% static 'modules/js/modernizr.js' %}"></script>
+<!-- /js files -->
+</head>
+<body>
+
+<!-- banner section -->
+<section class="banner-w3ls">
+	<!-- navigation section -->
+	<div class="navbar-wrapper">
+		<div class="container">
+			<nav class="navbar navbar-inverse navbar-static-top">
+				<div class="navbar-header">
+					<button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#navbar" aria-expanded="false" aria-controls="navbar">
+						<span class="sr-only">Toggle navigation</span>
+						<span class="icon-bar"></span>
+						<span class="icon-bar"></span>
+						<span class="icon-bar"></span>
+					</button>
+					<a class="navbar-brand" href="#"><h1>RL_Agent</h1></a>
+				</div>
+				<div id="navbar" class="navbar-collapse collapse">
+					<ul class="nav navbar-nav navbar-right cl-effect-20">
+						<li><a href="/agent_home/"><span data-hover="Home">Home</span></a></li>
+						<li><a href="/analyse/"><span data-hover="Analyse">Analyse</span></a></li>
+						<li><a href="/material_view/"><span data-hover="To Process">To Process</span></a></li>
+						<li><a href="/residue_page/"><span data-hover="Residue">Residue</span></a></li>
+						<li><a href="/agent_logout/"><span data-hover="Logout">Logout</span></a></li>
+					</ul>
+				</div>
+			</nav>
+		</div>
+	</div>
+	<!-- /navigation section -->
+
+	<!-- slider -->
+	<div class="slider">
+		<ul class="slider-main">
+			<li>
+				<img src="{% static 'modules/images/banner1.jpg' %}" alt="">
+				<div class="container">
+					<div class="banner-w3layouts1">
+						{% block content %}
+						{% endblock %}
+					</div>   
+				</div>
+			</li>
+		</ul>
+	</div>
+	<!-- /slider -->
+</section>
+<!-- /banner section -->
+
+<!-- js files -->
+<script src="{% static 'modules/js/jquery.min.js' %}"></script>
+<script src="{% static 'modules/js/bootstrap.min.js' %}"></script>
+<script src="{% static 'modules/js/SmoothScroll.min.js' %}"></script>
+<script src="{% static 'modules/js/jquery.easing.min.js' %}"></script>
+<script src="{% static 'modules/js/grayscale.js' %}"></script>
+
+<!-- js for banner -->
+<script src="{% static 'modules/js/osSlider.js' %}"></script>
+
+<!-- /js for banner -->
+
+<!-- js for back to top -->
+<script src="{% static 'modules/js/top.js' %}"></script>
+<!-- /js for back to top -->
+
+<!-- js for stats section -->
+<script type="text/javascript" src="{% static 'modules/js/numscroller-1.0.js' %}"></script>
+<!-- /js for stats section -->
+
+<!-- js for specialities section -->
+<script src="{% static 'modules/js/fsbanner.js' %}"></script>
+<script>
+	$('#demo-3').fsBanner({ 'trigger': 'mouse' });
+</script>
+<!-- /js for specialities section -->
+
+<!-- js for search button -->
+<script src="{% static 'modules/js/classie.js' %}"></script>
+<script src="{% static 'modules/js/uisearch.js' %}"></script>
+<script>
+	new UISearch(document.getElementById('sb-search'));
+</script>
+<!-- /js for search button -->
+
+<!-- js for bootstrap dropdown -->
+<script src="{% static 'modules/js/index.js' %}"></script>
+<!-- /js for bootstrap dropdown -->
+
+<script src="{% static 'modules/js/aos.js' %}"></script>
+<script src="{% static 'modules/js/index2.js' %}"></script>
+<!-- /js files -->
+
+</body>
+</html>

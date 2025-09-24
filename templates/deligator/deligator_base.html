@@ -1,0 +1,65 @@
+<!DOCTYPE HTML>
+{% load static %}
+<html>
+<head>
+<title>RL_deligator | Home</title>
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+<link href="//fonts.googleapis.com/css?family=Gruppo" rel="stylesheet">
+<link href="//fonts.googleapis.com/css?family=Open+Sans:300,300i,400,400i,600,600i,700,700i,800,800i" rel="stylesheet">
+<link href="{% static 'modules/css/bootstrap.min.css' %}" rel="stylesheet" type="text/css" media="all" />
+<link href="{% static 'modules/css/font-awesome.min.css' %}" rel="stylesheet" type="text/css" media="all" />
+<link href="{% static 'modules/css/aos.css' %}" rel='stylesheet prefetch' type="text/css" media="all" />
+<link href="{% static 'modules/css/style.css' %}" rel="stylesheet" type="text/css" media="all" />
+<script src="{% static 'modules/js/modernizr.js' %}"></script>
+</head>
+<body>
+{% for m in messages %}
+	<script>
+		alert('{{ m }}')
+	</script>
+{% endfor %}
+<section class="banner-w3ls">
+	<div class="navbar-wrapper">
+		<div class="container">
+			<nav class="navbar navbar-inverse navbar-static-top">
+				<div class="navbar-header">
+					<button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#navbar" aria-expanded="false" aria-controls="navbar">
+						<span class="sr-only">Toggle navigation</span>
+						<span class="icon-bar"></span>
+						<span class="icon-bar"></span>
+						<span class="icon-bar"></span>
+					</button>
+					<a class="navbar-brand" href="#"><h1>RL_deligator</h1></a>
+				</div>
+				<div id="navbar" class="navbar-collapse collapse">
+					<ul class="nav navbar-nav navbar-right cl-effect-20">
+						<li><a href="/deligator_home/"><span data-hover="Home">Home</span></a></li>
+						<li><a href="/raw_materials/"><span data-hover="Raw Materials">Raw Materials</span></a></li>
+						<li><a href="/send_raw_details/"><span data-hover="View">ViewMaterials</span></a></li>
+						<li><a href="/res_details/"><span data-hover="Final Details">Final Details</span></a></li>
+						<li><a href="/statistics/"><span data-hover="Final Statistics">FinalStatistics</span></a></li>
+						<li><a href="/deligator_logout/"><span data-hover="Logout">Logout</span></a></li>
+					</ul>
+				</div>
+			</nav>
+		</div>
+	</div>
+	<div class="slider">
+        <ul class="slider-main">
+            <li>
+                <img src="{% static 'modules/images/banner2.jpg' %}" alt="">
+				<div class="container">
+					<div class="banner-w3layouts1">
+						{% block content %}
+						{% endblock %}
+					</div>
+				</div>
+            </li>
+        </ul>
+    </div>
+</section>
+
+
+</body>
+</html>
